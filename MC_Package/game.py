@@ -1,4 +1,4 @@
-from die import Die
+# from die import Die
 # import die
 import numpy as np
 import pandas as pd

@@ -1,7 +1,10 @@
 # import numpy as np
 # import pandas as pd
-from die import Die
-from game import Game
+# from die import Die
+# from game import Game
+# from MC_Package import Game
+# from game import Game
+from MC_Package.game import Game
 
 class Analyzer():
     ''' This is the class that analyzes a die game. An Analyzer object takes the results of a single game and computes
@@ -10,6 +13,7 @@ various descriptive statistical properties about it.
 
     def __init__(self,game_object):
         '''Checks if a game object is passed and initializes the game object and results df to be used by the other methods.'''
+        # if not isinstance(game_object, Game):
         if not isinstance(game_object, Game):
             raise ValueError('Passed object is not a Game object.')
         else:
