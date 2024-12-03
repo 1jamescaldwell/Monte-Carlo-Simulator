@@ -4,7 +4,7 @@ Fall 2024 <br>
 Created for UVA DS5100 class, Programming for Data Science
 
 ## Overview
-For this project, I wrote, tested (unittest), used, packaged, and published a Python module and accompanying files. The main idea of this project was to create a monte carlo simulator. This consisted of created several classes that could be used to create, play, and analyze games of coin tosses and dice. <br>
+For this project, I wrote, tested (unittest), used, packaged, and published a Python module and accompanying files. The main idea of this project was to create a monte carlo simulator. This consisted of created several classes that could be used to create, play, and analyze games of coin tosses and dice. At its most complex, the simulator was used to roll a 26-sided alphanumeric die and calculated how many true english words were created.<br>
 
 ## Contents
 This repo contains: <br>
