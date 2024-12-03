@@ -8,7 +8,7 @@ For this project, I wrote, tested (unittest), used, packaged, and published a Py
 
 ## Contents
 This repo contains: <br>
- 1. A python package for the monte carlo simulator. It contains a Die class, a Game class, an Analyzer class, and a unittest file. <br>
+ 1. A python package for the monte carlo simulator. File folder: "MC_Package." It contains a Die class, a Game class, an Analyzer class, and a unittest file. <br>
  2. A python notebook demonstrating the package's usage. <br>
  3. Setup and .txt files used for playing the monte carlo simulator. <br>
 
