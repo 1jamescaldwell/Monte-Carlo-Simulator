@@ -17,9 +17,9 @@ This project demonstrated understanding of OOP, packaging, data wrangling, and a
 ## Usage
 After downloading the package, install using: pip install -e . (or pip install MC_Package) <br>
 To use the classes: <br>
- from MC_Package.die import Die <br>
-    To create a simple coin: my_die_faces = np.array(['H','T']), my_coin1 = Die(my_die_faces)
- from MC_Package.game import Game <br>
-    To flip a coin 50 times: my_game1 = Game([my_die_faces]), my_game1.play(1000)
- from MC_Package.analyzer import Analyzer <br>
-    To determine the number of jackpots: my_analyzer = Analyzer(my_game1), print(my_analyzer.check_jackpot())
+1. from MC_Package.die import Die <br>
+   a. To create a simple coin: my_die_faces = np.array(['H','T']), my_coin1 = Die(my_die_faces)
+2. from MC_Package.game import Game <br>
+   a. To flip a coin 50 times: my_game1 = Game([my_die_faces]), my_game1.play(1000)
+3. from MC_Package.analyzer import Analyzer <br>
+   a. To determine the number of jackpots: my_analyzer = Analyzer(my_game1), print(my_analyzer.check_jackpot())
