@@ -1,5 +1,9 @@
 # Monte-Carlo-Simulator
-A monte carlo simulator using a set of three related classes — a Die class, a Game class, and an Analyzer class. <br>
+Created by James Caldwell 
+Fall 2024
+
+This repo contains: <br>
+ 1. A monte carlo simulator using a set of three related classes — a Die class, a Game class, and an Analyzer class. <br>
 
 For this project, I wrote, tested (unittest), used, packaged, and published a Python module and accompanying files. <br>
 
