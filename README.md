@@ -24,9 +24,9 @@ To use the classes: <br>
 3. from MC_Package.analyzer import Analyzer <br>
    a. To determine the number of jackpots: my_analyzer = Analyzer(my_game1), print(my_analyzer.check_jackpot())
 
-## Comprehensive overview of each class
+# Comprehensive overview of each class
 
-### Die class
+## Die class
 NAME
     MC_Package.die
 
@@ -68,6 +68,89 @@ CLASSES
      |  __weakref__
      |      list of weak references to the object (if defined)
 
-FILE
-    /sfs/gpfs/tardis/home/ywe4kw/Documents/MSDS/DS5100/Monte_Carlo_Simulator/Monte-Carlo-Simulator/MC_Package/die.py
+## Game Class
+NAME
+    MC_Package.game
 
+CLASSES
+    builtins.object
+        Game
+    
+    class Game(builtins.object)
+     |  Game(die_list)
+     |  
+     |  This is the class that sets up the attributes for a game. A game consists of rolling of one or more similar dice (Die objects)
+     |  one or more times. Each game is initialized with a Python list that contains one or
+     |  more dice.
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self, die_list)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  play(self, num_rolls)
+     |      Rolls the set of die the specified number of times and stores the result of the rolls.
+     |  
+     |  show_results(self, format='wide')
+     |      Returns the game results as a dataframe. An optional input is "wide" or "narrow" for the format of the dataframe. Defaults to "wide"
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+
+
+   ## Analyzer Class
+   NAME
+    MC_Package.analyzer
+
+DESCRIPTION
+    # import numpy as np
+    # import pandas as pd
+
+CLASSES
+    builtins.object
+        Analyzer
+    
+    class Analyzer(builtins.object)
+     |  Analyzer(game_object)
+     |  
+     |  This is the class that analyzes a die game. An Analyzer object takes the results of a single game and computes
+     |  various descriptive statistical properties about it.
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self, game_object)
+     |      Checks if a game object is passed and initializes the game object and results df to be used by the other methods.
+     |  
+     |  check_jackpot(self)
+     |      Calculates the number of times a jackpot is scored.  A jackpot is a result in which all faces are the same, e.g. all ones for a six-sided die.
+     |      If only one dice is rolled, all plays will be a jackpot.
+     |  
+     |  combo_count(self)
+     |      This Computes the distinct combinations of faces rolled, along with their counts.
+     |      This method starts with the face_counts_df created by the face_counts() method.
+     |  
+     |  face_counts(self)
+     |      This method calculates how many instances of each face value there are per roll.
+     |      Step 1. Automatically generate a list of the faces
+     |      Step 2. Use game's method show_results() to calculate by row each face count
+     |      Step 3. Save as a df (dropping unneeded columns) and return
+     |  
+     |  permutation_count(self)
+     |      Computes the distinct permutations of faces rolled, along with their counts. 
+     |      This method starts with the face_counts_df created by the face_counts() method.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
